@@ -26,10 +26,10 @@ for n, k in enumerate(users_name):
     print(
         'from:{} since:{}-0{}-{}'.format(users_name[n], nowYear, nowMonth, nowDay))
 
-f = open("tweets.json", "w")
+# f = open("tweets.json", "w")
 j = json.dumps(tweets)
-f.write(j)
-f.close
+# f.write(j)
+# f.close
 
 
 @app.route('/', methods=['GET'])
