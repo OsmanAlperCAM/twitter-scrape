@@ -28,7 +28,7 @@ for n, k in enumerate(users_name):
         'from:{} since:{}-0{}-{}'.format(users_name[n], nowYear, nowMonth, nowDay))
 
 # f = open("tweets.json", "w")
-j = json.dumps(tweets)
+j = json.dumps(sorted(tweets, key=lambda item: item['date'], reverse=True))
 # f.write(j)
 # f.close
 
