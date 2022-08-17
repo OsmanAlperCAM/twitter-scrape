@@ -15,9 +15,9 @@ nowYear = str(datetime.now().year)
 nowMonth = str(datetime.now().month)
 nowDay = str(datetime.now().day)
 
-# users_name = ['temmuz1919', 'haskologlu',
-#               'lordsinov', 'GOrtadogu', 'akdenizpolitik', 'bpthaber']
-users_name = ['bpthaber']
+users_name = ['temmuz1919', 'haskologlu',
+              'lordsinov', 'GOrtadogu', 'akdenizpolitik', 'bpthaber','kamerknc','1savasansahin','2savasansahin','ConflictTR','OguzhanUgur','macovskii']
+
 for n, k in enumerate(users_name):
     for i, tweet in enumerate(twitterScraper.TwitterSearchScraper('from:{} since:{}-{}-{}'.format(users_name[n], nowYear, nowMonth, nowDay)).get_items()):
         if i > 100:
